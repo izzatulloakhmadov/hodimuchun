@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0EBF5"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/qdulogo1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Sarlavha -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tizimga kirish"
+            style="@style/TextAppearance.Title"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="start" />
+
+        <!-- Login label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            style="@style/TextAppearance.Label"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Login input -->
+        <EditText
+            android:id="@+id/etLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Login"
+            android:background="@drawable/edit_text_bg"
+            android:backgroundTint="#005A8A"
+            android:textColorHint="#777777"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Parol label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parol"
+            style="@style/TextAppearance.Label"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Parol input -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Parol"
+                android:inputType="textPassword"
+                android:background="@drawable/edit_text_bg"
+                android:backgroundTint="#005A8A"
+                android:textColorHint="#777777"
+                android:padding="12dp"
+                android:layout_marginEnd="48dp" />
+
+            <ImageView
+                android:id="@+id/ivTogglePassword"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/visibility_24dp_1f1f1f_fill0_wght400_grad0_opsz24"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="Toggle Password Visibility" />
+        </FrameLayout>
+
+        <!-- Kirish tugmasi -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kirish"
+            style="@style/TextAppearance.Button"
+            android:backgroundTint="#006837"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>
